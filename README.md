@@ -71,6 +71,20 @@ just docs::build    # Build static documentation
 just docker::build  # Build Docker image
 just docker::push   # Push to registry
 ```
+
+### Copier Template
+
+This project was generated from a copier template. To update the project from the latest template or change your copier answers:
+
+```sh
+just copier::update     # Update from template (re-prompts for answers)
+just copier::update-auto # Update with current answers (no prompts)
+just copier::diff       # Preview changes without applying
+just copier::recopy     # Full re-copy (after major template changes)
+just copier::answers    # Show current template answers
+```
+
+To change your copier answers (e.g. project name, description, options), run `just copier::update` — it will re-prompt for each answer, letting you modify them.
 <!--doc-end-->
 
 ## License
